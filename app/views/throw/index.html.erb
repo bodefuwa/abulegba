@@ -1,8 +1,6 @@
 <div>
   <h2>Welcome to Bode's Rock Paper Scissors</h2>
-  <h3>
-    To play, select a sign to throw. 
-  </h3>
+ 
   <p>
     You'll be playing against the computer <br/>
     The rules are:
@@ -14,7 +12,13 @@
     </ul>
   </p>
   <hr/>
+
   <p>
-    <%= fa_icon "diamond", base: "circle", class: "fa-5x" %>  <%= fa_icon "file-text-o", base: "circle", class: "fa-5x"  %>  <%= fa_icon "cut", base: "circle", class: "fa-5x"  %>
+    <h3>
+      To play, select a sign to throw. 
+    </h3>
+    <%= link_to '<i class="fa fa-diamond fa-5x"></i>'.html_safe, '/throw/rock' %>
+    <%= link_to '<i class="fa fa-file-text-o fa-5x"></i>'.html_safe, '/throw/paper' %>
+    <%= link_to '<i class="fa fa-cut fa-5x"></i>'.html_safe, '/throw/scissors' %>
   </p>
 </div>

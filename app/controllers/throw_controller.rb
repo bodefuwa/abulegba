@@ -3,6 +3,6 @@ class ThrowController < ApplicationController
   end
 
   def sign
-    throw.play(:sign)
+    throw.play(sign)
   end
 end
