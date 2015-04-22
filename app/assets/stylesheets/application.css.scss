@@ -10,6 +10,31 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require font-awesome
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	padding-top:60px;
+}
+
+header {
+  #logo {
+    float: left;
+    font-size: 2em;
+  }
+}
+
+footer {
+	margin-top: 45px;
+	padding-top: 5px;
+}
